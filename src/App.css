@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merienda', cursive;
+}
+
+.App {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 400px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 3px 3px 10px #0007;
+}
+
+.card__quote {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.card__author {
+  font-size: 32px;
+  font-weight: 700;
+  margin-left: auto;
+  width: max-content;
+}
+
+.card__btn {
+  display: block;
+  margin-left: auto;
+  color: white;
+  border: none;
+  width: 30px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: filter 100ms ease, transform 100ms ease;
+}
+
+.card__btn::hover {
+  filter: brightness(1.2);
+  transform: scale(1.05);
+  transition: filter 100ms ease, transform 100ms ease;
+}
